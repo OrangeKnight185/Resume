@@ -1,0 +1,133 @@
+\input{setup/preamble.tex}
+\input{setup/macros.tex}
+
+\begin{document}
+    %%% Title %%%
+    \tcbset{colframe=title,colback=title,arc=0mm}
+    \begin{tcolorbox}
+
+        \begin{minipage}{0.9\textwidth} % Name and Contact Info
+            \vspace{.5em}
+
+            \name{Ian Soledade}{Innovative rising first-year Aerospace Engineering student, admitted to the Georgia Tech Honors Program. Seeking to leverage STEM experience into commercial aerospace applications through a productive engineering internship.} % Name and Profession
+
+            % \name{Ian Soledade}{Innovative rising college freshman looking to diversify my experience and further develop my customer service and teamwork abilities through a summer job position.} % Name and Profession
+            
+            \vspace{1em}
+            \email{ian.soledade@icloud.com} $\cdot$
+            \phone{+1 (720) 755-5683} $\cdot$
+            \address{Boulder, CO}
+        \end{minipage}
+        
+    \end{tcolorbox}
+
+    %%% Sections %%%
+    \vspace*{-1em}
+    \tcbset{colframe=white,colback=white,arc=0mm, height=0.8\textheight}
+    \begin{tcolorbox}
+        \vspace*{-0.5em}
+        \begin{minipage}[t]{0.175\textwidth} % Side Panel (e.g. Skills, Links, Languages, etc.)
+            \begin{tcolorbox}[height=0.8\textheight, grow to left by=0.55cm,colback=backdrop,colframe=backdrop,arc=0mm]
+
+                % Skills, the skill level is drawn as bars, input: skill name and an array starting from 0 and ending before 4
+                \subsection*{\Large{Skills}}
+                    \skill{Math}{0, 1, 2, 3, 4}
+                    \skill{Physics}{0, 1, 2, 3}
+                    \skill{Programming}{0, 1, 2, 3}
+                    \skill{Git}{0, 1}
+                    \skill{Design}{0, 1, 2}
+                    \skill{Prototyping}{0, 1, 2}
+                    \skill{Windows}{0, 1, 2, 3}
+                    \skill{Mac OS}{0, 1, 2}
+                    \skill{GSuite}{0, 1, 2}
+
+                \subsection*{\Large{Languages}}
+                    \lan{Python}{0, 1, 2, 3, 4}
+                    \lan{C++}{0, 1, 2, 3}
+                    \lan{MATLAB}{0, 1, 2}
+                    \lan{LaTeX}{0, 1, 2}
+                    
+            \end{tcolorbox}
+        \end{minipage}
+        \begin{minipage}[t]{0.825\textwidth} % Main Panel (e.g. Education, Work Experience)
+            \begin{tcolorbox}[grow to right by=0.95cm,height=0.8\textheight,colframe=white,colback=white]
+
+                % Experience
+                \section*{\Large{Experience}}
+
+                    \work{Hall-effect Thruster Research}{Sep 2022 - Apr 2023}{University of Colorado Boulder}{\begin{itemize}
+
+                        \item Created analytical models for low-power (<9kW) Hall-effect thrusters (HET) using MATLAB. Achieved less than 1\% error compared to measured data from the H9 HET, aiding significant reductions in computation time compared to numerical models.
+
+                        \item Authored a paper describing the modeling process, code, and results.
+
+                        \item Research guided by PhD student mentor at the Non-equilibrium Gas and Plasma Dynamics Laboratory, NASA textbook materials, and research papers.
+                        
+                    \end{itemize}}
+                    
+                    \vspace{1em}
+                
+                    \work{MATE Underwater Robotics Competition}{Sep 2021 - May 2023}{Boulder High Robotics Team}{\begin{itemize}
+
+                        \item Electrical and software engineering team captain. Placed 6th in 2022 world finals. 
+                        
+                        %\item Provided mentorship for 40+ club members. Organized smaller teams to solve problems, share knowledge, create teaching opportunities, and encourage members to take on leadership roles to develop our abilities as a club. 
+
+                        \item Provided mentorship for 40+ club members. Organized smaller teams to solve problems, share knowledge, and create teaching opportunities. Encouraged members to take on leadership roles to develop our abilities as a club. 
+
+                        \item Designed custom PCB with: two micro-controllers, a 9 DoF IMU, SD storage, Ethernet, sensor I/O, 12 servo controls, power conditioning and distribution, and visual/audio indicators.
+
+                        \item Developed algorithms to stabilize the underwater vehicle using IMU data to automate 8 thruster outputs for attitude control, convert game controller input into thrust vectoring, and to generate 3D mesh structures from camera data.
+
+                        \item Coded all embedded software functions: boot and initialization of sensors and thrusters, Ethernet packet construction and communication, thruster/manipulator arm/camera tilt control, and logging.
+
+                        \item Created a desktop application to process and display camera data, interface with a game controller, and display sensor data and control status.
+                        
+                        % \item Competed in the world finals last season, placed 6th.
+                        
+                        % \item Designed a custom PCB for robot control.
+                        
+                        % \item Designing control software for robot stability underwater using IMU data.
+                        
+                    \end{itemize}}
+
+                % Education
+                \section*{\Large{Education}}
+                
+                    \education{Dual Enrollment}{May 2023}{University of Colorado}{GPA: 4.0}{\begin{itemize}
+                    
+                        \item Sought additional computer science and mathematics coursework opportunities through dual enrollment.
+                        
+                        \item Courses: Comp Sci 1, Calculus 3, Linear Algebra, Ordinary Differential Equations, and Partial Differential Equations.
+                        
+                    \end{itemize}}
+                    
+                    \vspace{1em}
+                    
+                    \education{High School}{May 2023}{Boulder High School}{GPA: 4.67}{\begin{itemize}
+
+                        % Potential bullets:
+                        %  - Music
+                        %  - Math Club
+                        %  - Aviation
+                        %  - 
+                    
+                        %\item Acquired experience working with tools and manufacturing by spending over 600 hours in the school shop over the past two years.
+                        
+                        %\item Developed practical design, prototyping, and manufacturing experience through 600+ hours in the  school innovation lab over the past two years.
+
+                        \item Aviation and Aerospace: Studied the manufacture and operation of aircraft and began construction of an RV-12 two-seater single-engine aircraft.
+                        
+                        \item AP courses: Physics C (Mechanics and E\&M), Calculus BC, US History, World History, English Language and Composition, and English Literature and Composition.
+
+                        \item Honors: National Merit Scholarship Finalist, AP Scholar with Distinction, National Society of High School Scholars, and Honor Roll (4 Years).
+
+                        % IF SPACE AVAILABLE: Extracurriculars bullet
+                        
+                    \end{itemize}}
+
+            \end{tcolorbox}
+        \end{minipage}
+    \end{tcolorbox}
+    
+\end{document}
